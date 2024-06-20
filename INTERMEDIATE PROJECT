@@ -1,0 +1,35 @@
+STEPS TO BUILD A SMART TRAFFIC MANAGEMENT SYSTEM WITH ARDUINO
+STEP 1:Gather all the components on the digital board or phasical table.
+MICRO SERVO:
+STEP 2:Connect the ground terminal of each to do the GND pin of the arduino.
+STEP 3:Connect the power terminal of each to the 5v pin of the arduino
+STEP 4:connnect the signal terminal of it to the 4,5,6 & 7number pins of the arudiuno respectively
+SOURCE CODE
+#include <Servo.h>
+Servo s1, s2, s3, s4;
+void setup()
+{
+s1.attach(4);
+s1.write(90);
+s2.attach(5);
+s2.write(90);
+s3.attach(6);
+s3.write(90);
+s4.attach(7);
+s4.write(90);
+}
+void loop()
+{
+s1.write(90);
+s2.write(90);
+s3.write(90);
+s4.write(90);
+delay(10000);
+}
+
+
+s1.write(0);
+s2.write(0);
+s3.write(0);
+s4.write(0);
+delay(10000);
